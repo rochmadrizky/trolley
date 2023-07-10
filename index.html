@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trolley</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <!-- Navbar Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="relative flex item-center justify-between">
+
+                <div class="px-1 flex items-center">
+                    <a href="#home" class="block font-bold text-abu dark:text-lumayan text-2xl md:text-4xl py-6">R&P</a>
+
+                    <div class="ml-3 mt-2">
+                        <button type="button" class="btn-theme-moon text-abu">
+                            <span class="material-symbols-outlined">
+                                dark_mode
+                            </span>       
+                        </button>
+    
+                        <button type="button" class="btn-theme-sun hidden dark:text-lumayan">
+                            <span class="material-symbols-outlined">
+                                light_mode
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex items-center px-1">
+                    <div class="bg-lumayan dark:bg-abu w-[165px] md:w-96 rounded-2xl">
+                        <input type="search" name="search" id="search" placeholder="search" class="md:w-full border-none bg-transparent px-4 py-1 text-dark dark:text-lumayan outline-none">
+                    </div>
+                </div>
+
+                <div class="flex items-center px-2">
+                    <a href="" class="inline-flex font-semibold text-dark dark:text-lumayan">
+                        <span class="material-symbols-outlined pr-2">
+                            trolley
+                        </span>
+                        Login
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Hero Stard -->
+    <section id="home" class="pt-36 pb-36 bg-slate-100 dark:bg-slate-800">
+        <div class="container">
+            <div class="flex items-center flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <div class="mt-12">
+                        <img src="img/jam.png" alt="jam" class="w-full mx-auto">
+                    </div>
+                </div>
+
+                <div class="w-full self-end px-4 pt-8 lg:w-1/2">
+                    <h1 class="font-semibold text-4xl lg:text-7xl pb-1 text-oren">
+                        Enjoy jam
+                    </h1>
+
+                    <h1 class="font-light text-3xl text-black dark:text-lumayan lg:text-5xl">
+                        & very tasty.
+                    </h1>
+
+                    <p class="font-light text-sm text-black dark:text-abu lg:text-lg pt-3 lg:pt-5">
+                        made from selected and fresh strawberries,
+                    </p>
+
+                    <p class="font-light text-sm text-black dark:text-abu lg:text-lg">
+                        enjoy and happy shopping.
+                    </p>
+
+                    <h1 class="text-base dark:text-lumayan lg:text-2xl pt-4">
+                        $3,30 -
+                        <span class="opacity-50 dark:opacity-70">
+                            ($̶6̶,̶6̶1̶)
+                        </span>
+                    </h1>
+
+                    <div class="flex flex-wrap pt-2 gap-2">
+
+                        <a href="" class="border-2 border-black dark:border-lumayan inline-flex justify-center items-center rounded-xl w-36 h-8 dark:text-lumayan dark:opacity-50 opacity-40">
+                                <p class="pr-1 font-semibold text-biru">
+                                    Free Ongkir
+                                </p>
+    
+                                <span class="material-symbols-outlined text-biru">
+                                local_shipping
+                                </span>
+                        </a>
+                              
+                        <a href="" class="border-2 border-dark dark:border-lumayan inline-flex justify-center items-center rounded-xl w-36 h-8 text-dark dark:text-lumayan dark:opacity-50 opacity-40">
+                                <p class="pr-2 font-semibold">
+                                    Flash sale
+                                </p>
+    
+                                <span class="material-symbols-outlined">
+                                    sell
+                                </span>
+                        </a>
+
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 mt-6">
+                        <div class="flex items-center justify-center w-28 h-10 lg:w-32 lg:h-10 border-2 border-black dark:border-oren dark:text-lumayan dark:hover:border-opacity-70 opacity-60 rounded-lg">
+                        
+                        <button class="minus text-center text-xl pr-2  cursor-pointer ">
+                                -
+                        </button>
+
+                        <span class="num text-center px-7 text-xl">
+                                1
+                        </span>
+
+                        <button class="plus text-center text-xl pl-2 cursor-pointer">
+                                +
+                        </button>
+                        
+                        </div>
+
+                        <a href="" class="flex items-center justify-center w-36 h-10 border-2 border-black dark:border-oren rounded-lg font-bold text-black dark:text-lumayan dark:hover:border-opacity-70 opacity-60">
+
+                            <span class="material-symbols-outlined pr-2">
+                                trolley
+                            </span>
+
+                            Buy now!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+
+    <footer class="pb-2 pt-4 border-oren border-b-[6px] bg-slate-100 dark:bg-slate-800">
+        <div class="max-w-5xl mx-auto">
+            
+            <p class="text-center lg:text-right text-lg text-oren font-semibold opacity-60">
+                Thank you for visiting.
+            </p>
+
+            <p class="text-center lg:text-right text-lg text-abu font-semibold opacity-60">
+                &copy; Copyright <span id="fullYear"></span>. All right reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
